@@ -1,0 +1,5 @@
+{
+  "name": "RJ Travel Agency",
+  "description": "A high-end travel agency management system and professional Arabic storefront. Features real-time Supabase integration, admin dashboard for trip management, and a beautiful RTL user interface for clients.",
+  "requestFramePermissions": []
+}
