@@ -66,7 +66,9 @@ const TripCard: React.FC<TripCardProps> = ({ trip, isHistory }) => {
         
         {!isHistory ? (
           <button 
-            onClick={() => navigate(`/trip/${trip.id}`)}
+            onClick={() => {
+              navigate(`/trip/${trip.id}#about-trip`);
+            }}
             className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-200"
           >
             <span>التفاصيل والتقييمات</span>

@@ -124,11 +124,11 @@ const App: React.FC = () => {
               <ul className="space-y-3 text-gray-400 font-['Cairo']">
                 <li className="flex items-center gap-2">
                   <Phone size={16} className="text-orange-500" />
-                  <a href="tel:+212123456789" className="hover:text-orange-500 transition-colors" dir="ltr">+212 123 456 789</a>
+                  <a href="tel:+212669337019" className="hover:text-orange-500 transition-colors" dir="ltr">+212 669-337019</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail size={16} className="text-orange-500" />
-                  <a href="mailto:info@rjtravel.com" className="hover:text-orange-500 transition-colors">info@rjtravel.com</a>
+                  <a href="mailto:rj.vip.travel@gmail.com" className="hover:text-orange-500 transition-colors">rj.vip.travel@gmail.com</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin size={16} className="text-orange-500" />
@@ -141,7 +141,7 @@ const App: React.FC = () => {
               <p className="text-gray-400 font-['Cairo'] mb-4">ابقَ على اطلاع بأحدث العروض والرحلات</p>
               <div className="flex gap-3">
                 <a 
-                  href="https://facebook.com/rajii_travel" 
+                  href="https://web.facebook.com/profile.php?id=61566130067614" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
@@ -158,7 +158,7 @@ const App: React.FC = () => {
                 >
                   <Instagram size={20} />
                 </a>
-                <a 
+                {/* <a 
                   href="https://twitter.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -166,9 +166,9 @@ const App: React.FC = () => {
                   aria-label="Twitter"
                 >
                   <Twitter size={20} />
-                </a>
+                </a> */}
                 <a 
-                  href="https://wa.me/212123456789" 
+                  href="https://wa.me/212669337019" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 p-3 rounded-full transition-all duration-300 transform hover:scale-110"

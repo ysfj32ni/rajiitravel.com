@@ -59,6 +59,18 @@ const TripDetailsPage: React.FC = () => {
     fetchTripAndDepartures();
   }, [id, navigate]);
 
+  // Scroll to section if hash is present in URL
+  useEffect(() => {
+    if (!loading && window.location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, [loading]);
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -116,7 +128,7 @@ const TripDetailsPage: React.FC = () => {
       {/* Content Section */}
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
         {/* Description */}
-        <div className="bg-white rounded-3xl shadow-sm border border-gray-200 p-8">
+        <div id="about-trip" className="bg-white rounded-3xl shadow-sm border border-gray-200 p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4 font-['Cairo']">عن الرحلة</h2>
           <p className="text-gray-700 leading-relaxed text-lg font-['Cairo']">
             {trip.description}
